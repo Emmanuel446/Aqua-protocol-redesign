@@ -21,7 +21,7 @@ const Hero = () => {
           
 
           {/* Main Heading */}
-          <h1 className="text-6xl mt-4 md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
+          <h1 className="text-6xl mt-16 md:mt-6 md:text-7xl lg:text-8xl font-display font-bold mb-6 leading-tight">
             <span className="text-white">Distributed</span>
             <br />
             <span className="text-gradient">Trust Networks</span>
@@ -70,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="grid grid-cols-3 gap-8 max-w-2xl -mt-3 mx-auto"
+            className="grid grid-cols-3 gap-8 max-w-2xl mb-5 -mt-10 md:-mt-3 mx-auto"
           >
             {[
               { value: '10K+', label: 'Verifications' },
@@ -91,7 +91,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="absolute bottom-2 left-1/2 -translate-x-1/2"
+        className="hidden sm:block absolute bottom-2 left-1/2 -translate-x-1/2"
       >
         <div className="w-6 h-10 border-2 border-slate-700 rounded-full flex justify-center p-2">
           <motion.div
