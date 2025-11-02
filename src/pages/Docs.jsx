@@ -266,10 +266,10 @@ const Docs = () => {
               Join Discord Community
             </a>
             <a
-              href="https://github.com/aqua-protocol/discussions"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition-all"
+              className="px-8 py-4 rounded-x bg-slate-800 border border-slate-700 rounded-xl font-semibold hover:bg-slate-700 transition-all"
             >
               GitHub Discussions
             </a>

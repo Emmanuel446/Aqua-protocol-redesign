@@ -435,3 +435,87 @@
   --tw-gradient-from: #0284c7 !important;
   --tw-gradient-to: #7c3aed !important;
 }
+
+/* ============================================
+   CODE BLOCK MOBILE FIXES
+   ============================================ */
+
+/* Ensure code blocks don't overflow on mobile */
+pre {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #1e293b;
+}
+
+/* Light mode scrollbar */
+.light pre {
+  scrollbar-color: #cbd5e1 #f1f5f9;
+}
+
+/* Custom scrollbar for webkit browsers */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 4px;
+}
+
+.light pre::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+
+.light pre::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+pre::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+.light pre::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Prevent code from breaking layout */
+code {
+  word-wrap: break-word;
+  white-space: pre;
+  display: inline-block;
+}
+
+/* Mobile specific code sizing */
+@media (max-width: 640px) {
+  pre {
+    font-size: 12px;
+    padding: 0.75rem;
+  }
+  
+  code {
+    font-size: 12px;
+  }
+}
+
+/* Ensure parent containers allow overflow */
+.overflow-x-auto {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Fix for code blocks inside cards */
+@media (max-width: 768px) {
+  .relative .overflow-x-auto {
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
