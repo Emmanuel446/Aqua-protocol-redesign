@@ -161,38 +161,37 @@ const About = () => {
       </section>
 
       {/* Technology Stack */}
-      {/* Technology Stack */}
-<section className="container mx-auto px-6 mb-20">
-  <div className="max-w-4xl mx-auto">
-    <div className="bg-gradient-to-br from-aqua-500/10 to-violet-600/10 border border-aqua-500/20 rounded-2xl p-12">
-      <div className="text-center mb-8">
-        <Lock className="w-12 h-12 mx-auto mb-4 text-aqua-400" />
-        <h2 className="text-3xl font-display font-bold mb-4">
-          Built on Proven Cryptography
-        </h2>
-        <p className="text-slate-300">
-          Aqua Protocol leverages industry-standard cryptographic primitives
-        </p>
-      </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        {['SHA-256', 'Ed25519', 'Merkle Trees', 'ECDSA'].map((tech, index) => (
-          <div
-            key={index}
-            className="group relative bg-white dark:bg-slate-900/50 border-none border-slate-200 dark:border-slate-800 rounded-xl p-4 hover:border-aqua-500 dark:hover:border-aqua-500/50 transition-all cursor-pointer overflow-hidden"
-          >
-            {/* Gradient background on hover */}
-            <div className="absolute inset-0 bg-gradient-to-br from-aqua-500/10 to-violet-600/10 opacity-0 group-hover:opacity-100 transition-opacity" />
-            
-            {/* Text */}
-            <div className="relative text-slate-900 dark:text-white font-semibold text-sm sm:text-base">
-              {tech}
+      <section className="container mx-auto px-6 mb-20">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gradient-to-br from-aqua-500/10 to-violet-600/10 border border-aqua-500/20 rounded-2xl p-12">
+            <div className="text-center mb-8">
+              <Lock className="w-12 h-12 mx-auto mb-4 text-aqua-400" />
+              <h2 className="text-3xl font-display font-bold mb-4">
+                Built on Proven Cryptography
+              </h2>
+              <p className="text-slate-300">
+                Aqua Protocol leverages industry-standard cryptographic primitives
+              </p>
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              {['SHA-256', 'Ed25519', 'Merkle Trees', 'ECDSA'].map((tech, index) => (
+                <div
+                  key={index}
+                  className="group relative bg-white dark:bg-slate-900/50 border-none border-slate-200 dark:border-slate-800 rounded-xl p-4 hover:border-aqua-500 dark:hover:border-aqua-500/50 transition-all cursor-pointer overflow-hidden"
+                >
+                  {/* Gradient background on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-aqua-500/10 to-violet-600/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  
+                  {/* Text */}
+                  <div className="relative text-white dark:text-slate-300 font-semibold text-sm sm:text-base">
+                    {tech}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Open Source */}
       <section className="container mx-auto px-6 mb-20">
@@ -209,7 +208,7 @@ const About = () => {
               infrastructure should be transparent, auditable, and owned by everyone who uses it.
             </p>
             <a
-              href="https://github.com/aqua-protocol"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-8 py-4 rounded-xl bg-gradient-to-r from-aqua-500 to-violet-600 text-white font-semibold hover:shadow-xl hover:shadow-aqua-500/50 transition-all"
@@ -234,7 +233,7 @@ const About = () => {
               <span>hello@aqua-protocol.org</span>
             </a>
             <a
-              href="https://twitter.com/aquaprotocol"
+              href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-3 px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-aqua-500/50 transition-all"
@@ -243,7 +242,7 @@ const About = () => {
               <span>@aquaprotocol</span>
             </a>
             <a
-              href="https://github.com/aqua-protocol"
+              href="https://github.com"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center space-x-3 px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white hover:border-aqua-500/50 transition-all"

@@ -299,7 +299,7 @@ console.log('Timestamp:', verification.timestamp);`,
               href="https://github.com/aqua-protocol"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition-all inline-flex items-center justify-center space-x-2"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 rounded-xl bg-slate-800 border border-slate-700 text-slate-700 dark:text-slate-300 font-semibold hover:bg-slate-700 transition-all inline-flex items-center justify-center space-x-2"
             >
               <Github className="w-5 h-5" />
               <span>View on GitHub</span>

@@ -106,6 +106,14 @@
   color: #64748b !important;
 }
 
+.light .text-slate-700 {
+  color: #4a4a4a !important;
+}
+
+.light .text-slate-900 {
+  color: #333333 !important;
+}
+
 .light .text-white {
   color: #0f172a !important;
 }
