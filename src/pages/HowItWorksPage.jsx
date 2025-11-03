@@ -172,11 +172,11 @@ if (result.valid) {
       </section>
 
       {/* Core Concepts - Expandable Cards */}
-      <section className="container mx-auto px-6 mb-20">
-        <h2 className="text-3xl font-display font-bold text-center mb-12">
+      <section className="container mx-auto px-4 sm:px-6 mb-12 sm:mb-16 md:mb-20">
+        <h2 className="text-2xl sm:text-3xl font-display font-bold text-center mb-8 sm:mb-12">
           Core Concepts
         </h2>
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-4 sm:space-y-6">
           {steps.map((step, index) => {
             const Icon = step.icon;
             const isExpanded = expandedCard === step.id;
@@ -191,21 +191,21 @@ if (result.valid) {
               >
                 <button
                   onClick={() => setExpandedCard(isExpanded ? null : step.id)}
-                  className="w-full p-6 flex items-center justify-between hover:bg-slate-800/30 transition-colors"
+                  className="w-full p-4 sm:p-6 flex items-center justify-between hover:bg-slate-800/30 transition-colors"
                 >
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
                     <div
-                      className={`w-14 h-14 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center`}
+                      className={`w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 rounded-xl bg-gradient-to-br ${step.color} flex items-center justify-center`}
                     >
-                      <Icon className="w-7 h-7 text-white" />
+                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                     </div>
-                    <div className="text-left">
-                      <h3 className="text-xl font-semibold text-white mb-1">{step.title}</h3>
-                      <p className="text-slate-400 text-sm">{step.description}</p>
+                    <div className="text-left flex-1 min-w-0">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-1">{step.title}</h3>
+                      <p className="text-slate-400 text-xs sm:text-sm line-clamp-2 sm:line-clamp-1">{step.description}</p>
                     </div>
                   </div>
                   <ChevronDown
-                    className={`w-6 h-6 text-slate-400 transition-transform ${
+                    className={`w-5 h-5 sm:w-6 sm:h-6 text-slate-400 transition-transform flex-shrink-0 ml-2 ${
                       isExpanded ? 'rotate-180' : ''
                     }`}
                   />
@@ -218,8 +218,8 @@ if (result.valid) {
                     exit={{ height: 0, opacity: 0 }}
                     className="border-t border-slate-800"
                   >
-                    <div className="p-6 space-y-6">
-                      <p className="text-slate-300 leading-relaxed">{step.details}</p>
+                    <div className="p-4 sm:p-6 space-y-4 sm:space-y-6">
+                      <p className="text-slate-300 leading-relaxed text-sm sm:text-base">{step.details}</p>
                       <div>
                         <h4 className="text-sm font-semibold text-slate-400 mb-3 uppercase tracking-wide">
                           Code Example
@@ -257,7 +257,7 @@ if (result.valid) {
             </a>
             <a
               href="/docs"
-              className="px-8 py-4 rounded-xl bg-slate-800 border border-slate-700 text-white font-semibold hover:bg-slate-700 transition-all"
+              className="px-8 py-4 rounded-xl bg-slate-800 border border-slate-700 light:text-grey-400 font-semibold hover:bg-slate-700 transition-all"
             >
               Read Full Documentation
             </a>
