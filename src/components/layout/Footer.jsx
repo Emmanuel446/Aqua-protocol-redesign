@@ -20,7 +20,7 @@ const Footer = () => {
       { name: 'Whitepaper', href: '#', external: true },
     ],
     Community: [
-      { name: 'Twitter', href: 'https://twitter.com/aquaprotocol', external: true },
+      { name: 'Twitter', href: 'https://x.com/inblockio?t=P63Wjx4T93mbnOHXYi8pLQ&s=09', external: true },
       { name: 'Discord', href: '#', external: true },
       { name: 'Blog', href: '#', external: true },
       { name: 'Contact', href: 'mailto:hello@aqua-protocol.org', external: true },
@@ -29,7 +29,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Github, href: 'https://github.com', label: 'GitHub' },
-    { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
+    { icon: Twitter, href: 'https://x.com/inblockio?t=P63Wjx4T93mbnOHXYi8pLQ&s=09', label: 'Twitter' },
     { icon: Mail, href: 'mailto:hello@gmail.com', label: 'Email' },
   ];
 
