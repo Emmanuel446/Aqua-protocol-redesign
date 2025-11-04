@@ -88,7 +88,7 @@ const DeveloperCTA = () => {
         </div>
 
         {/* Code Snippet Preview */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -104,19 +104,19 @@ const DeveloperCTA = () => {
             <pre className="text-sm text-slate-300 font-mono overflow-x-auto">
               <code>{`import { AquaClient } from '@aqua/sdk';
 
-const aqua = new AquaClient();
+                const aqua = new AquaClient();
 
-// Notarize data
-const proof = await aqua.notarize({
-  data: myDocument,
-  metadata: { type: 'contract' }
-});
+                // Notarize data
+                const proof = await aqua.notarize({
+                  data: myDocument,
+                  metadata: { type: 'contract' }
+                });
 
-// Verify anytime
-const isValid = await aqua.verify(proof);`}</code>
+                // Verify anytime
+                const isValid = await aqua.verify(proof);`}</code>
             </pre>
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
